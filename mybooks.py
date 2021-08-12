@@ -39,4 +39,20 @@ scroll_bar.grid(row=1, column=8, rowspan=14,sticky=W)
 list_bx.configure(yscrollcommand=scroll_bar.set)
 scroll_bar.configure(command=list_bx.yview)
 
+modify_btn = Button(root, text="Modify Record", bg="purple", fg="white", font="helvetica 10 bold", command="")
+modify_btn.grid(row=15, column=4)
+
+delete_btn = Button(root, text="Delete Record", bg="red", fg="white", font="helvetica 10 bold", command="")
+delete_btn.grid(row=15, column=5)
+
+view_btn = Button(root, text="View all Record", bg="black", fg="white", font="helvetica 10 bold", command="")
+view_btn.grid(row=15, column=1)
+
+clear_btn = Button(root, text="Clear Screen", bg="maroon", fg="white", font="helvetica 10 bold", command="")
+clear_btn.grid(row=15, column=2)
+
+exit_btn = Button(root, text="Exit Application", bg="blue", fg="white", font="helvetica 10 bold", command="")
+exit_btn.grid(row=15, column=3)
+
+
 root.mainloop()
